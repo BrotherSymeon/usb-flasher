@@ -30,6 +30,13 @@ line-length = 100
 
 [tool.isort]
 profile = "hug"
+
+[[tool.poetry.source]]
+name = "local"
+url = "http://localhost:3141/innocent/dev/+simple"
+default = true
+
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
